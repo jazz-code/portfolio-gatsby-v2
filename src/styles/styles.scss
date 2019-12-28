@@ -66,3 +66,66 @@ header {
         }
     }
 }
+
+// banner
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    position: relative;
+    height: 100vh;
+    .row{
+        position: relative;
+        .main-text {
+            font-size: 5.8rem;
+            text-transform: uppercase;
+            letter-spacing: 42px;
+            font-weight: 700;
+            color: $white;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            // mix-blend-mode: overlay;
+            mix-blend-mode: difference;
+            z-index: 9;
+            @media(max-width: 1440px) {
+                font-size: 4.4rem;
+                letter-spacing: 36px;
+            }
+        }
+        .sub-text {
+            font-size: 3.8rem;
+            text-transform: uppercase;
+            letter-spacing: 42px;
+            font-weight: 700;
+            color: $white;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 60%;
+            transform: translateY(-20%);
+            text-align: center;
+            // mix-blend-mode: overlay;
+            // mix-blend-mode: difference;
+            z-index: 9;
+            @media(max-width: 1440px) {
+                font-size: 1.4rem;
+                letter-spacing: 23px;
+            }
+            
+        }
+        .main-image {
+            width: 600px;
+            margin: 0 auto;
+            @media (max-width: 1440px) {
+                width: 700px;
+                // height: 100px;
+                // position: relative;
+                // top: 100%;
+            }
+        }
+    }
+}

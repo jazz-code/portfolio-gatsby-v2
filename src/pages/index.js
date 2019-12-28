@@ -6,10 +6,12 @@ import "../styles/styles.scss"
 import "normalize.css"
 
 import Header from "../components/header"
+import Banner from "../components/banner"
 
 const IndexPage = () => (
   <div>
     <Header />
+    <Banner />
     {/* <Link to="/page-2">Go to page 2</Link> */}
   </div>
 )
