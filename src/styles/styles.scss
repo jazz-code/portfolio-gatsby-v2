@@ -76,6 +76,9 @@ header {
     height: 100vh;
     .row{
         position: relative;
+        border: black 11px solid;
+        padding-top: 70px;
+        padding-bottom: 70px;
         .main-text {
             font-size: 5.8rem;
             text-transform: uppercase;
@@ -91,15 +94,17 @@ header {
             // mix-blend-mode: overlay;
             mix-blend-mode: difference;
             z-index: 9;
+            // text-shadow:
+            // -1px 3px 0 #000, -4px 4px 0 #000;
             @media(max-width: 1440px) {
                 font-size: 4.4rem;
                 letter-spacing: 36px;
             }
         }
         .sub-text {
-            font-size: 3.8rem;
+            font-size: 1.2rem;
             text-transform: uppercase;
-            letter-spacing: 42px;
+            letter-spacing: 19px;
             font-weight: 700;
             color: $white;
             position: absolute;
@@ -111,6 +116,12 @@ header {
             // mix-blend-mode: overlay;
             // mix-blend-mode: difference;
             z-index: 9;
+            text-shadow:
+            // -1px -1px 0 $black,
+            // 1px -1px 0 $black,
+            // -1px 1px 0 $black,
+            // 1px 1px 0 $black;
+            -1px 3px 0 #000, -4px 4px 0 #000;
             @media(max-width: 1440px) {
                 font-size: 1.4rem;
                 letter-spacing: 23px;
