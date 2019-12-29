@@ -2,6 +2,11 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import { IoMdArrowDropdown } from 'react-icons/io';
+import { GoMarkGithub } from 'react-icons/go';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+
 const Banner = () => {
     const data = useStaticQuery(graphql`
     query {
@@ -30,7 +35,18 @@ const Banner = () => {
                     <div className="main-image">
                         {/* <Img fluid={data.nyc.childImageSharp.fluid} /> */}
                         <Img fluid={data.bg.childImageSharp.fluid} />
+                        <div className="icons">
+                            <GoMarkGithub/>
+                            <FaLinkedin/>
+                            <FaTwitter/>
+                        </div>
                     </div>
+                </div>
+                {/* <div className="icons">
+                    <GoMarkGithub/>
+                </div> */}
+                <div className="scroll">
+                    <span> <IoMdArrowDropdown /></span>
                 </div>
             </div>
         </div>

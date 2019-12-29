@@ -138,5 +138,28 @@ header {
                 // top: 100%;
             }
         }
+        .icons {
+            font-size: 21px;
+            /* border: 0px solid black; */
+            text-align: center;
+            display: flex;
+        }
+    }
+    .scroll {
+        padding-top: 28px;
+        margin-left: 47%;
+        font-weight: 700;
+        font-size: 2.875rem;
+        text-align: center;
+        letter-spacing: 1.5px;
+        color: #000;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 48px;
+        transition: transform 300ms ease-in-out;
+ 
+        &:hover {
+            transform: translate(20px, 20px) 
+  }
     }
 }
